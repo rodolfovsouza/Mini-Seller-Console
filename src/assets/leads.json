@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Ana Souza",
+    "company": "TechCorp",
+    "email": "ana@techcorp.com",
+    "source": "Website",
+    "score": 85,
+    "status": "New"
+  },
+  {
+    "id": 2,
+    "name": "Carlos Lima",
+    "company": "Inova Ltda",
+    "email": "carlos@inova.com",
+    "source": "Referral",
+    "score": 72,
+    "status": "Contacted"
+  }
+]
