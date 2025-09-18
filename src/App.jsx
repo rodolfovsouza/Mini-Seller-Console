@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import leadsData from "./assets/leads.json";
-import LeadsList from "./components/LeadsList";
-import LeadDetailPanel from "./components/LeadDetailPanel";
-import OpportunitiesTable from "./components/OpportunitiesTable";
+import LeadsList from "./components/LeadsList.jsx";
+import LeadDetailPanel from "./components/LeadDetailPanel.jsx";
+import OpportunitiesTable from "./components/OpportunitiesTable.jsx";
 
 function App() {
   const [leads, setLeads] = useState([]);
@@ -10,10 +10,10 @@ function App() {
   const [opportunities, setOpportunities] = useState([]);
 
   useEffect(() => {
-    // Simula carregamento
+    // Simula carregamento dos leads
     setTimeout(() => {
       setLeads(leadsData);
-    }, 1000);
+    }, 500);
   }, []);
 
   const convertToOpportunity = (lead) => {
@@ -22,22 +22,21 @@ function App() {
       name: lead.name,
       stage: "Prospecting",
       amount: null,
-      accountName: lead.company
+      accountName: lead.company,
     };
     setOpportunities([...opportunities, newOpportunity]);
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Mini Seller Console</h1>
-      
-      <LeadsList 
-        leads={leads} 
-        onSelectLead={setSelectedLead} 
-      />
+    <div className="p-6 bg-gray-100 min-h-screen">
+      <h1 className="text-4xl font-bold text-blue-600 mb-6">
+        Mini Seller Console
+      </h1>
+
+      <LeadsList leads={leads} onSelectLead={setSelectedLead} />
 
       {selectedLead && (
-        <LeadDetailPanel 
+        <LeadDetailPanel
           lead={selectedLead}
           onClose={() => setSelectedLead(null)}
           onConvert={convertToOpportunity}

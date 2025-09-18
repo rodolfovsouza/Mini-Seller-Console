@@ -16,5 +16,77 @@
     "source": "Referral",
     "score": 72,
     "status": "Contacted"
+  },
+  {
+    "id": 3,
+    "name": "Beatriz Martins",
+    "company": "SoftSolutions",
+    "email": "beatriz@softsolutions.com",
+    "source": "Email Campaign",
+    "score": 90,
+    "status": "Qualified"
+  },
+  {
+    "id": 4,
+    "name": "Daniel Oliveira",
+    "company": "NextGen",
+    "email": "daniel@nextgen.com",
+    "source": "Website",
+    "score": 60,
+    "status": "New"
+  },
+  {
+    "id": 5,
+    "name": "Fernanda Ribeiro",
+    "company": "AlphaTech",
+    "email": "fernanda@alphatech.com",
+    "source": "Referral",
+    "score": 78,
+    "status": "Contacted"
+  },
+  {
+    "id": 6,
+    "name": "Gabriel Santos",
+    "company": "Inova Ltda",
+    "email": "gabriel@inova.com",
+    "source": "Website",
+    "score": 82,
+    "status": "Qualified"
+  },
+  {
+    "id": 7,
+    "name": "Juliana Costa",
+    "company": "TechCorp",
+    "email": "juliana@techcorp.com",
+    "source": "Referral",
+    "score": 70,
+    "status": "New"
+  },
+  {
+    "id": 8,
+    "name": "Leonardo Almeida",
+    "company": "SoftSolutions",
+    "email": "leonardo@softsolutions.com",
+    "source": "Email Campaign",
+    "score": 88,
+    "status": "Contacted"
+  },
+  {
+    "id": 9,
+    "name": "Mariana Fernandes",
+    "company": "NextGen",
+    "email": "mariana@nextgen.com",
+    "source": "Website",
+    "score": 95,
+    "status": "Qualified"
+  },
+  {
+    "id": 10,
+    "name": "Rafael Pereira",
+    "company": "AlphaTech",
+    "email": "rafael@alphatech.com",
+    "source": "Referral",
+    "score": 65,
+    "status": "New"
   }
 ]
